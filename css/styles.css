@@ -4,14 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: #fffbf7;
 }
 
 li, a, button {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #598b8e;
     text-decoration: none;
 }
 
@@ -22,14 +22,11 @@ header {
     padding: 30px, 10%;
 }
 
-img {
-    max-width: 10%;
-}
-
 .logo {
     cursor: pointer;
     order: 3;
     margin-left: auto;
+    max-width: 5%;
 }
 
 nav {
@@ -64,7 +61,7 @@ nav {
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: rgba(103,181,75,1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -72,25 +69,41 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+    background-color: rgba(103,181,75,0.8);
     
 }
 
 h1{
     text-align: center;
-    color:#edf0f1
+    color:#025157;
 }
 
 form{
-    color: #edf0f1
+    color: #edf0f1;
+    text-align: center;
+    
 }
 
 p{
-    color: #edf0f1
+    text-align: center;
+    color: #777779;
 }
 
 input{
     padding: auto;
     margin: 5px;
 }
-  
+
+.sublogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+}
+
+.stadistics{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+}

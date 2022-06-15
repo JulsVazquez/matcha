@@ -1,109 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
     background-color: #fffbf7;
-}
-
-li, a, button {
-    font-family: "Monserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #598b8e;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px, 10%;
-}
-
-.logo {
-    cursor: pointer;
-    order: 3;
-    margin-left: auto;
-    max-width: 5%;
-}
-
-nav {
-    order: 1;
-}
-
-.nav__links {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav__links li:nth-child(1) {
-    padding: 0 20px 0 0;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-    color: #0088a9;
-}
-
-.cta{
-    order: 2;
-}
-
-button {
+  }
+  
+  h1 {
+    color: #025157;
+    text-align: center;
+  }
+  
+  p {
+    color: #8b8b8bcc;
+    font-family: Verdana;
+    font-size: 20px;
+  }
+  
+  button {
+    color: #fff;
+    background-color: #025157;
+  }
+  
+  .header {
+    margin-top: 40px;
     margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(103,181,75,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(103,181,75,0.8);
-    
-}
-
-h1{
+    margin-right: 20px;
+    font-size: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  .header > * {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 45px;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .logo {
+    width: 15%;
+  }
+  
+  .logo > img {
+    width: 15%;
+  }
+  
+  .navbar {
+    width: 70%;
     text-align: center;
-    color:#025157;
-}
-
-form{
-    color: #edf0f1;
-    text-align: center;
-    
-}
-
-p{
-    text-align: center;
-    color: #777779;
-}
-
-input{
-    padding: auto;
-    margin: 5px;
-}
-
-.sublogo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 25%;
-}
-
-.stadistics{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 25%;
-}
+    color: #025157;
+    font-weight: 500;
+  }
+  
+  .actions {
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+  }

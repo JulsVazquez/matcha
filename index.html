@@ -8,29 +8,36 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   <!--NavBar -->
-   <header>
-    <img class="logo" src="static/matcha.webp" alt="logo">
-    <nav>
-      <ul class="nav__links">
-        <li><a href="#Platform">Platform</a></li>
-        <li><a href="#Pricing">Pricing</a></li>
-        <li><a href="#Customers">Customers</a></li>
-        <li><a href="#Resources">Resources</a></li>
-        <li><a href="#About">About</a></li>
+  <header class="header">
+    <!-- Logo con link a la página principal -->
+    <a href="/" class="logo">
+      <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha"/>
+    </a>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+      <ul>
+        <li>Platform</li>
+        <li>Pricing</li>
+        <li>Customers</li>
+        <li>Resources</li>
+        <li>About</li>
       </ul>
     </nav>
-    <a class="cta" href="#"><button>Contact</button></a>
+    <!-- Contenedor de acciones de usuario -->
+    <div class="actions">
+      <a href = "/login">Sign In</a>
+      <button>Start free trial</button>
+    </div>
   </header>
-  <h1>Build your blog. Build yout business</h1>
-  <p>Instantly publish articles, drive more trafic, grow your email list, and see your blog's impact on sales.</p>
+  <h1>Build your site. Build your business</h1>
+  <p>Instantly publish articles, drive more traffic</p>
+  <!-- Formulario para el email -->
   <form>
     <input type="email" placeholder="Enter email adress" id="email">
     <button type="submit">Try it now &crarr;</button>
   </form>
   <p>Start publishing today with a <strong>free 7-day trial.</strong></p>
   <p><strong>No credit card</strong> required.</p>
-  <img class="sublogo" src="static/capterra.png" alt="sublogo">
-  <img class="stadistics" src="static/stadistics.png" alt="stadistics">
+  <img src="static/capterra.png" class="capterra" alt="Capterra">
 </body>
 </html>

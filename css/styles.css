@@ -3,6 +3,7 @@ body {
 }
 
 h1 {
+  font-size: 60px;
   color: #025157;
   text-align: center;
   font-family: 'Alegreya', serif;
@@ -211,4 +212,71 @@ iframe {
 .features .feature-card .feature-image img {
   margin-top: 0;
   height: 100%;
+}
+
+/** Dispositivos móviles con vista vertical */
+@media (max-width: 575px) {
+  .navbar,
+  .actions{
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .main {
+    margin-top: 85px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 60%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explanatory-video > video, iframe {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    height: fit-content;
+  }
+
+  .feature-image {
+    display: none;
+  }
+
+}
+
+
+/** Dispositivos pequeños en horizonal */
+@media (max-width: 575px) and (max-width: 767px) {
+
 }

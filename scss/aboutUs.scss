@@ -79,7 +79,71 @@ body {
       font-family: 'Open Sans',sans-serif;
       margin-bottom: 35px;
       text-decoration: none;
-      color: inherit;
+      text-shadow: #025157 1px 1px 2px;
+      transition: color .3s ease-in-out;
+
+  
+        /* Agrega este selector para activar la transición en el evento :hover */
+      &:hover {
+        color:#67b54b;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
     }
   }
+  .flecha {
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 25px;
   
+    .flecha-contenedor {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      margin-bottom: 65px;
+  
+      .flecha-animada {
+        position: absolute;
+        animation-name: up-and-down, alrededor;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        height: 130px;
+        width: 130px;
+  
+        img {
+          width: 130px;
+          transform: rotate(-90deg);
+        }
+      }
+  
+      @keyframes alrededor {
+        from {left: -280px;}
+        to {left: 280px;}
+      }
+  
+      @keyframes up-and-down {
+        0% {
+          top: 0;
+        }
+  
+        25% {
+          top: -20px;
+        }
+  
+        50% {
+          top: -40px;
+        }
+  
+        75% {
+          top: -20px;
+        }
+  
+        100% {
+          top: 0;
+        }
+      }
+    }
+}
